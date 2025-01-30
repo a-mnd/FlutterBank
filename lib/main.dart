@@ -1,11 +1,13 @@
+import 'package:app_bankitito/components/Themes/my_themes.dart';
+import 'package:app_bankitito/screens/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(titobank());
+  runApp(SenacB()); //titobank
 }
 
 class SenacB extends StatelessWidget {
-  SenacB({Key? key}) : super(key: key);
+  const SenacB({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,9 +15,9 @@ class SenacB extends StatelessWidget {
           false, //estamos tirando a faixa debug que vem padrao.
       title: 'Senac Investimento',
       theme: MyTheme, // uma vez que o tema está pronto ficará sem erro.
-      //home: Home(),
+      home: Home(),
     );
   }
 }
 
-Widget titobank() {}
+//Widget titobank() {}
